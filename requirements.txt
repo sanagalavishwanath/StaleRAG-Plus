@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+pyyaml>=6.0
+requests>=2.31
+lightgbm>=4.0
+matplotlib>=3.8

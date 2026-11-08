@@ -1,0 +1,24 @@
+stage timings (s): {'data': 0.17, 'features': 0.48, 'detector': 130.42, 'readers': 5.96, 'total': 143.73}
+
+         187356443 function calls (186859651 primitive calls) in 143.498 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1540 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.023    0.023  143.729  143.729 /home/claude/stalerag_plus_plus/src/stalerag/experiments/run.py:365(run_experiments)
+        1    0.012    0.012  130.423  130.423 /home/claude/stalerag_plus_plus/src/stalerag/experiments/run.py:94(evaluate_detector)
+       13    0.001    0.000  114.252    8.789 /home/claude/stalerag_plus_plus/src/stalerag/metrics.py:81(detector_metrics)
+       39    1.038    0.027  114.127    2.926 /home/claude/stalerag_plus_plus/src/stalerag/metrics.py:21(bootstrap_metric_ci)
+156194/39065    0.899    0.000  112.565    0.003 /usr/local/lib/python3.12/dist-packages/sklearn/utils/_param_validation.py:187(wrapper)
+    13013    0.087    0.000   43.520    0.003 /home/claude/stalerag_plus_plus/src/stalerag/metrics.py:91(f1)
+   510870    4.192    0.000   42.949    0.000 /usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:733(check_array)
+    13016    0.128    0.000   41.821    0.003 /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_ranking.py:499(roc_auc_score)
+    13013    0.021    0.000   40.507    0.003 /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1429(f1_score)
+    13013    0.025    0.000   40.444    0.003 /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1623(fbeta_score)
+    13013    0.334    0.000   40.367    0.003 /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1939(precision_recall_fscore_support)
+   143194    1.925    0.000   39.728    0.000 /usr/local/lib/python3.12/dist-packages/sklearn/utils/multiclass.py:249(type_of_target)
+    26029    0.145    0.000   38.816    0.001 /usr/local/lib/python3.12/dist-packages/sklearn/metrics/_base.py:23(_average_binary_score)
+   510870    0.459    0.000   27.522    0.000 /usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:44(_nw_into_df_or_series)
+
+

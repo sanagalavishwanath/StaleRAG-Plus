@@ -1,0 +1,20 @@
+stage timings (s): {'data': 0.19, 'features': 0.5, 'detector': 21.49, 'readers': 5.94, 'total': 33.77}
+
+         26706928 function calls (26327136 primitive calls) in 33.719 seconds
+
+   Ordered by: cumulative time
+   List reduced from 1587 to 10 due to restriction <10>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.021    0.021   33.765   33.765 /home/claude/stalerag_plus_plus/src/stalerag/experiments/run.py:365(run_experiments)
+        1    0.011    0.011   21.486   21.486 /home/claude/stalerag_plus_plus/src/stalerag/experiments/run.py:94(evaluate_detector)
+       13    0.001    0.000   15.326    1.179 /home/claude/stalerag_plus_plus/src/stalerag/experiments/run.py:79(fit_ensemble)
+       39    0.001    0.000   14.632    0.375 /home/claude/stalerag_plus_plus/src/stalerag/detector/model.py:63(fit)
+       39    0.002    0.000   14.628    0.375 /usr/local/lib/python3.12/dist-packages/sklearn/base.py:1381(wrapper)
+       39    0.547    0.014   14.603    0.374 /usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py:393(fit)
+    11700    0.080    0.000    8.748    0.001 /usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/grower.py:383(grow)
+   155182    5.034    0.000    8.654    0.000 /usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/grower.py:486(split_next)
+     3042    0.006    0.000    6.160    0.002 /home/claude/stalerag_plus_plus/src/stalerag/detector/model.py:73(stale_probability)
+     3042    0.005    0.000    6.148    0.002 /usr/local/lib/python3.12/dist-packages/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py:2150(predict_proba)
+
+

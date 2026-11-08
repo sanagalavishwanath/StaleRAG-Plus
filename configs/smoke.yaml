@@ -1,0 +1,20 @@
+data:
+  source: synthetic
+  n: 2000
+  synthetic_seed: 7
+  p_date_missing: 0.35
+  p_date_inverted: 0.10
+split: [0.5, 0.2, 0.3]
+data_seed: 13
+seeds: [0, 1, 2]
+n_boot: 1000
+coverage: 0.8
+filter_threshold: 0.5
+nli:
+  kind: lexical
+detector:
+  backend: auto
+readers:
+  - {kind: simulated, name: sim_order_biased, first_passage_bias: 0.75, recency_use: 0.20, memory_stale: 0.50, memory_current: 0.20, noise: 0.08}
+  - {kind: simulated, name: sim_recency_aware, first_passage_bias: 0.50, recency_use: 0.60, memory_stale: 0.35, memory_current: 0.35, noise: 0.08}
+  - {kind: simulated, name: sim_stale_memory, first_passage_bias: 0.60, recency_use: 0.10, memory_stale: 0.70, memory_current: 0.10, noise: 0.10}
